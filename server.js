@@ -56,4 +56,4 @@ app.post("/v2/posts", (req, res) => {
 });
 
 //listen
-app.listen(PORT, () => console.log("server running"));
+app.listen(PORT || process.env.PORT, () => console.log("server running"));
